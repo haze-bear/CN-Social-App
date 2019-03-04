@@ -6,11 +6,13 @@ import RightNav from "./RightNav"
 
 
 class App extends Component {
+
+
   render() {
     return (
       <div className="App">
-        <LeftNav/>
-        <Feed/>
+        <LeftNav />
+        <Feed />
         <RightNav/>
       </div>
     );

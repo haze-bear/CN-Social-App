@@ -23,13 +23,18 @@ class NewPost extends React.Component{
     submitHandler = (event) => {
         event.preventDefault()
         this.setState({term: "", post: this.state.term})
+        
     }
 
+    
+
     render(){
-        let newPost = this.state.post
+        
+
         return(
-            <div>
-                <form className="Post" onSubmit={this.submitHandler}>
+            <div className="NewPost">
+                <h1>New Post</h1>
+                <form onSubmit={this.submitHandler}>
                 <input value={this.state.term} onChange={this.typingHandler} />
                 <button>Submit</button>
                 </form>

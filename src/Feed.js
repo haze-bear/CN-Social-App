@@ -1,13 +1,19 @@
 import React from 'react';
-import NewPost from './NewPost';
+import Post from "./Post"
+
 
 class Feed extends React.Component{
 
+    
+
     render(){
         return(
-            <div>
-                <h1>Hello Feed</h1>
-                <h1>{NewPost.post}</h1>
+            <div className="Feed">
+                <h1>Feed</h1>
+                <Post/>
+                <Post/>
+                <Post/>
+                <Post/>
             </div>
         )
     }
