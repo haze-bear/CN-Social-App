@@ -1,13 +1,15 @@
 import React from 'react';
-import './components/profileDetails.css/';
+import './profileDetails.css';
 
-const ProfileDetails = props => {
+const ProfileDetails = (props) => {
     return (
-        <div>
-            <h1>{props.fullname}</h1>
-            <h3>{props.username}</h3>
-            <p>{props.bio}</p>
-            <p><strong><span>{props.totalPosts}</span> thoughts ducked</strong></p>
+        <div className="profile-details">
+            <h1>{props.fullname}fullname</h1>
+            <h3>{props.username}@username</h3>
+            <p>{props.bio}bio paragraph</p>
+            <h5><strong><span>{props.totalPosts}20</span> <span className="total-posts">thoughts</span> ducked</strong></h5>
         </div>
     )
 }
+
+export default ProfileDetails;
