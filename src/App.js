@@ -13,9 +13,10 @@ class App extends Component {
   constructor() {
     super()
     this.state = {
-        post:"",
+        post:[],
         term:"",
-        submit: false
+        postArr: [],
+        
         }
 }
 
@@ -25,12 +26,17 @@ class App extends Component {
 
   postButton = (event) => {
         event.preventDefault()
-        this.setState({term: "", post: this.state.term, submit:true})
+        if (this.state.term === ""){
+          return
+        }
+        let posts = [this.state.term]
+        // let posts = this.state.post
+        this.setState(prevState => ({
+          post: [...prevState.post, posts], term:"",
+        }))
+        // this.setState({term: "", post: posts})
         // this.newPost(this.state.post)
   }
-
-  
-   
 
   typingHandler = (event) => {
     this.setState({term: event.target.value})
@@ -47,7 +53,7 @@ class App extends Component {
         term={this.state.term}
         />
         <Feed 
-        newPost={this.state.post}
+        post={this.state.post}
         submit={this.state.submit}
         />
         <RightNav/>
