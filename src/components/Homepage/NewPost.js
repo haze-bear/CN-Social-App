@@ -9,12 +9,10 @@ class NewPost extends React.Component{
         super(props)
         this.state = {
             term: "",
-            post:"",
+            post:[],
 
         }
     }
-
-    
 
     typingHandler = (event) => {
         this.setState({term: event.target.value})

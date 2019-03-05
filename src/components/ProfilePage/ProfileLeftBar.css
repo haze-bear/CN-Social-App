@@ -1,0 +1,27 @@
+.edit-profile-btn {
+    width: 198px;
+    height: 40px;
+    color: #27B1BE;
+    background-color: #fff;
+    font-family: Rubik;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 50px;
+    border: none;
+    align-self: left;
+    margin: 30px;
+}
+
+.profile-photo {
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    align-self: center;
+    margin: 20px;
+}
+
+.profile-left-wrapper {
+    display: flex;
+    flex-direction: column;
+}

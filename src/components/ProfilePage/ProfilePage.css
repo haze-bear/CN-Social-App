@@ -1,0 +1,10 @@
+.profile-info {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 450px);
+    grid-template-rows: auto;
+}
+
+.item {
+    place-self: center;
+}

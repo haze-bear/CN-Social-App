@@ -5,6 +5,7 @@
     width: 370px;
     height: 337px;
     background-color: #fff;
+    align-self: center;
 }
 
 .total-posts {
