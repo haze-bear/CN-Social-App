@@ -1,5 +1,5 @@
 import React from 'react';
-import logoyellowbg from './logoyellowbg.svg';
+import logoyellowbg from '../logoyellowbg.svg';
 import "./RightNav.css";
 
 
