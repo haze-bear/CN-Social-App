@@ -1,0 +1,13 @@
+.profile-details {
+    padding: 20px;
+    text-align: left;
+    border-radius: 15px;
+    width: 370px;
+    height: 337px;
+    background-color: #fff;
+    align-self: center;
+}
+
+.total-posts {
+    color: #27B1BE;
+}

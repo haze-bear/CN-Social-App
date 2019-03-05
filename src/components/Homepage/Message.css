@@ -1,0 +1,16 @@
+.far{
+    background: green;
+    border-radius: 10%;
+    color: white;
+    width: 10%;
+    padding: 10%;
+    margin-bottom: 5%;
+    margin-right: 65%;
+    margin-top: 100%;
+    size: 80px;
+
+}
+
+.far ::after{
+    font-size: 150px;
+}
