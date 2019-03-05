@@ -3,6 +3,8 @@ import Profile from "./Profile"
 import NewPost from "./NewPost"
 import Search from "./Search"
 import Message from "./Message"
+import "./LeftNav.css";
+
 
 class LeftNav extends React.Component{
 

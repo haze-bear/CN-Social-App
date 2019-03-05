@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 
-import logoyellowbg from './logoyellowbg.svg';
-
 import './App.css';
 import LeftNav from "./components/LeftNav"
 import Feed from "./components/Feed"
@@ -14,12 +12,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-
-        <LeftNav />
-        <Feed />
-        <RightNav/>
-          <img src={logoyellowbg} className="App-logo" alt="logo" />
-          <h1>duck.io</h1>
+        <div class="LeftNav"><LeftNav /></div>
+        <div class="Feed"><Feed /></div>
+        <div class="RightNav"><RightNav /></div>
       </div>
     );
   }
