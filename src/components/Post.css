@@ -1,0 +1,72 @@
+
+.postCont {
+    background: #EEEEEE;
+    border-radius: 15px;
+    width: 100%;
+    margin: 10px;
+    box-shadow: 5px 5px 31px -15px rgba(0,0,0,0.75);
+  }
+  
+  .postHeader {
+    display: grid;
+    grid-template-columns: 125px 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "profilePic displayName displayName" "profilePic userName userName";
+    text-align: left;
+  
+  }
+  
+    .postHeader h1, h2 {
+      margin: 0;
+    }
+  
+    .postProfilePic {
+      margin: 15px;
+      background: #ffbe00;
+      height: 100px;
+      width: 100px;
+      border-radius: 15px;
+      grid-area: profilePic;
+    }
+  
+    .postDisplayName {
+      margin-top: 15px;
+      grid-area: displayName;
+    }
+  
+    .postUserName {
+      grid-area: userName;
+      
+    }
+  
+  .postBody {
+    margin-left: 130px;
+    margin-top: -40px;
+    padding-right: 15px;
+    text-align: left;
+  }
+  
+  .postActions {
+    width: 50%;
+    padding-bottom: 10px;
+    margin-left: 130px;
+    text-align: left;
+    display: grid;
+    grid-template-columns: 0.25fr 0.25fr 0.25fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "like repost comment";
+    color: #27b1be;
+    font-size: 20px;
+  }
+    .postIconLeft {
+      grid-area: like;
+    }
+  
+    .postIconCenter {
+      grid-area: repost;
+    }
+  
+    .postIconRight {
+      grid-area: comment;
+    }
+  

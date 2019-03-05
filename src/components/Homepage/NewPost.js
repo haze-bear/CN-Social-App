@@ -1,4 +1,5 @@
 import React from 'react';
+import "./NewPost.css";
 
 
 class NewPost extends React.Component{
@@ -30,10 +31,10 @@ class NewPost extends React.Component{
         
 
         return(
-            <div className="NewPost">
+            <div className="NewPost" >
                 <h1>New Post</h1>
                 <form onSubmit={this.submitHandler}>
-                <input value={this.state.term} onChange={this.typingHandler} />
+                <input placeholder="Share your thoughts..." value={this.state.term} onChange={this.typingHandler} />
                 <button>Submit</button>
                 </form>
             </div>
