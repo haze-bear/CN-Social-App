@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import logoyellowbg from '../logoyellowbg.svg';
-import DirectMessagesContactContainer from './DirectMessagesContactContainer.js';
+import logoyellowbg from '../../logoyellowbg.svg';
+import DirectMessagesContactContainer from '..DirectMsg/DirectMessagesContactContainer.js';
 
 
 class DirectMessages extends Component {

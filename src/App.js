@@ -12,17 +12,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-<<<<<<< HEAD
-        <LeftNav />
-        <Feed />
-        <RightNav/>
-          <img src={logoyellowbg} className="App-logo" alt="logo" />
-          <h1>duck.io</h1>
-=======
         <div class="LeftNav"><LeftNav /></div>
         <div class="Feed"><Feed /></div>
         <div class="RightNav"><RightNav /></div>
->>>>>>> master
       </div>
     );
   }
