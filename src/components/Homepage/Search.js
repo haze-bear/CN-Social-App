@@ -1,13 +1,12 @@
 import React from 'react';
+import './Search.css';
 
-class Search extends React.Component{
+class Search extends React.Component {
 
-    render(){
-        return(
+    render() {
+        return (
             <div className="Search">
-                <h1>Search</h1>
-                
-
+                <input className="searchFriend" placeholder="Search friend" />
             </div>
         )
     }
