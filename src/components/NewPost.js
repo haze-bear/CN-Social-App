@@ -34,10 +34,10 @@ class NewPost extends React.Component{
 
         return(
             <div className="NewPost" >
-                <h1>New Post</h1>
+                <h20>New Post</h20>
                 <form onSubmit={this.submitHandler}>
-                <input placeholder="Share your thoughts..." value={this.state.term} onChange={this.typingHandler} />
-                <button>Submit</button>
+                <input className="newPostThoughts" placeholder="Share your thoughts..." value={this.state.term} onChange={this.typingHandler} />
+                <button className="newPostDuckIt">Duck</button>
                 </form>
             </div>
         )
