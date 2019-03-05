@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 
 import './App.css';
-import LeftNav from "./LeftNav"
-import Feed from "./Feed"
-import RightNav from "./RightNav"
+import LeftNav from "./components/LeftNav"
+import Feed from "./components/Feed"
+import RightNav from "./components/RightNav"
 
 
 class App extends Component {
