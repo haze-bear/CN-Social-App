@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import logoyellowbg from '../logoyellowbg.svg';
-import DirectMessagesContacts from './DirectMessagesContacts.js';
+import DirectMessagesContactContainer from './DirectMessagesContactContainer.js';
 
 
 class DirectMessages extends Component {
@@ -9,7 +9,7 @@ class DirectMessages extends Component {
   render() {
     return (
       <div className="DirectMessages">
-          <DirectMessagesContacts />
+          <DirectMessagesContactContainer />
           <div className="dmCont">
           
           </div>

@@ -1,5 +1,41 @@
-.DirectMessagesContacts {
+.DirectMessagesContactContainer {
     background: #EEEEEE;
     height: 100vh;
     width: 100%;
+}
+
+.DmContactCont {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "profile name notification";
+    background: #ffffff;
+    border-radius: 75px;
+    margin: 12px;
+}
+
+.dmContactPic {
+    width: 66px;
+    height: 66px;
+    border-radius: 50%;
+    background: rebeccapurple;
+    grid-area: profile;
+    justify-self: center;
+    align-self: center;
+}
+
+.dmContactName {
+    grid-area: name;
+    justify-self: center;
+    align-self: center;
+}
+
+.dmContactNotification {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background: #FFBE00;
+    grid-area: notification;
+    justify-self: center;
+    align-self: center;
 }
