@@ -1,5 +1,5 @@
 import React from 'react';
-import "../../NewPost.css";
+import "./NewPost.css";
 
 
 class NewPost extends React.Component{

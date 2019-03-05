@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './DirectMessages.css';
-import DirectMessagesContact from './DirectMessageContacts.js';
+import DirectMessagesContact from './DirectMessagesContacts.js';
 
 
 class DirectMessagesContactContainer extends Component {
