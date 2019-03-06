@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import './index.css';
 import App from './App';
 import ProfilePage from './components/ProfilePage/ProfilePage';
-import DirectMsg from './components/DirectMsg/DirectMsg'
+import DirectMsg from './components/DirectMsg/DirectMessages.js'
 import * as serviceWorker from './serviceWorker';
 
 const routing = (
