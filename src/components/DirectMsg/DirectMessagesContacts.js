@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logoyellowbg from '../logoyellowbg.svg';
 import './DirectMessages.css';
 
 
