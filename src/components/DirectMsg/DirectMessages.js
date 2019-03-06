@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logoyellowbg from '../logoyellowbg.svg';
 import DirectMessagesContactContainer from './DirectMessagesContactContainer.js';
+import DirectMessagesChat from './Chat/DirectMessagesChat.js'
 
 
 class DirectMessages extends Component {
@@ -10,9 +11,7 @@ class DirectMessages extends Component {
     return (
       <div className="DirectMessages">
           <DirectMessagesContactContainer />
-          <div className="dmCont">
-          
-          </div>
+          <DirectMessagesChat />
       </div>
     );
   }

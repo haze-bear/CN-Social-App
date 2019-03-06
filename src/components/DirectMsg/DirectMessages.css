@@ -1,8 +1,15 @@
+.DirectMessages {
+    display: grid;
+    grid-template-columns: 0.25fr 0.75fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "contact chat";
+}
+
 .DirectMessagesContactContainer {
     background: #EEEEEE;
     height: 100vh;
     width: 100%;
-    /* display: grid; */
+    grid-area: contact;
 }
 
 .DmContactCont {
