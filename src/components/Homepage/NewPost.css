@@ -52,6 +52,7 @@
 }
 
 .newPostDuckIt:hover {
+    cursor: pointer;
     color: white;
     background-color: #27B1BE;
 }
