@@ -1,13 +1,9 @@
 import React from 'react';
-<<<<<<< HEAD:src/components/RightNav.js
-// import logoyellowbg from './logoyellowbg.svg';
-=======
-import logoyellowbg from '../../logoyellowbg.svg';
->>>>>>> 9fed75ae118aa9d2c6a04f8c3bb2fa115438d0a1:src/components/Homepage/RightNav.js
+// import logoyellowbg from '../../logoyellowbg.svg';
 import "./RightNav.css";
 
-import Followers from "./Followers"
-import Following from "./Following"
+// import Followers from "./Followers"
+// import Following from "./Following"
 
 class RightNav extends React.Component {
 
@@ -19,8 +15,8 @@ class RightNav extends React.Component {
                     <h1>duck.io</h1>
                 </div> */}
                 <h1 className="RightNav">RightNav</h1>
-                <div className="Followers"><Followers /></div>
-                <div className="Following"><Following /></div>
+                {/* <div className="Followers"><Followers /></div>
+                <div className="Following"><Following /></div> */}
             </div>
             
         )
