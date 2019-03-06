@@ -4,7 +4,7 @@ import './App.css';
 import LeftNav from "./components/Homepage/LeftNav"
 import Feed from "./components/Homepage/Feed"
 import RightNav from "./components/Homepage/RightNav"
-import Post from "./components/Homepage/Post"
+import Post from "./components/Homepage/Post";
 
 
 class App extends Component {

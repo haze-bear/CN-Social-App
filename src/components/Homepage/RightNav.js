@@ -2,8 +2,8 @@ import React from 'react';
 import logoyellowbg from '../../logoyellowbg.svg';
 import "./RightNav.css";
 
-import Followers from "./Followers"
-/import Following from "./Following"
+// import Followers from "./Followers"
+// import Following from "./Following"
 
 class RightNav extends React.Component {
 
