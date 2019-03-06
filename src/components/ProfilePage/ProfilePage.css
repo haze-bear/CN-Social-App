@@ -4,7 +4,3 @@
     grid-template-columns: repeat(3, 450px);
     grid-template-rows: auto;
 }
-
-.item {
-    place-self: center;
-}

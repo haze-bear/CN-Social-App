@@ -1,34 +1,47 @@
 .NewPost{
+    display: flex;
+    flex-direction: column;
     background: #FFBE00;
     border-radius: 10px;
-    height: 70%;
-    box-shadow: 10px 10px 31px -15px rgba(0,0,0,0.75);
     margin-right: 2%;
+    height: 150%;
+    width: 100%;
 
 }
 
 /*Place holder settings*/
-.newPostThoughts{
+.newPostThoughts {
+    resize: none;
+    width: 100%;
     padding-left: 5%;
-    width: 90%;
     padding-top: 2%;
+    padding-bottom: 20%;
     border-radius: 20px;
-    padding-bottom: 80%;
+    border: none;
+    background: #FFBE00;
+    color: white;
+    font-size: 140%;
+    overflow-wrap: break-word;
 }
 
 .newPostThoughts::placeholder {
-    color: #27B1BE;
-    font-size: 140%;
-
-  }
-
-.newPostDuckIt{
-    color: #27B1BE;
-    border-radius: 20px;
-    font-weight: bold;
-    margin-top: 1%;
-    margin-bottom: 1%;
-    margin-left: 80%;
-
-
+    color: #fff;
+    font-size: 1.5rem;
 }
+
+.newPostThoughts:focus {
+    outline: none;
+}
+
+.newPostDuckIt {
+    align-self: flex-end;
+    width: 139px;
+    height: 40px;
+    color: #27B1BE;
+    border: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 10px;
+}
+

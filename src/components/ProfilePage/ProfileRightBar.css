@@ -1,0 +1,32 @@
+.RightNav {
+    align-items: bottom;
+    display: grid;
+    text-align: center;
+  
+  }
+  .Followers {
+
+    display: grid;
+    background-color: #FFBE00;
+    text-align: center;
+    border: 2px;
+    border-color: black;
+    border-radius: 10px;
+    height: 100px;
+    width: 180px;
+    margin: 2%;
+    
+    
+  }
+  .Following {
+  
+    display: grid;
+    background-color: rgb(241, 190, 37);
+    text-align: center;
+    border: 2px;
+    border-color: black;
+    border-radius: 10px;
+    height: 100px;
+    width: 180px;
+    margin: 2%;
+  }

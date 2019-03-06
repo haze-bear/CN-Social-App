@@ -5,8 +5,8 @@ import Trending from "./Trending";
 import Settings from "./Settings"
 import "./RightNav.css";
 
-
 class RightNav extends React.Component {
+
 
     render() {
         return (
@@ -19,6 +19,7 @@ class RightNav extends React.Component {
                 <Trending/>
                 <Settings />
             </div>
+            
         )
     }
 
