@@ -1,9 +1,10 @@
 import React from 'react';
-import logoyellowbg from './logoyellowbg.svg';
+import logoyellowbg from '../../logoyellowbg.svg';
 import "./RightNav.css";
 
 
 class RightNav extends React.Component {
+
 
     render() {
         return (
