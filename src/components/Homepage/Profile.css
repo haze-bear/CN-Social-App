@@ -1,32 +1,30 @@
-.leftHeader {
+.Profile {
             display: grid;
             grid-gap: 8px;
-            grid-template-columns: 100px 100px;
+            grid-template-columns: auto auto;
+            grid-template-rows: auto auto;
 }
   
 .profilePic {
             grid-column: 1;
-            grid-row: 1 / span 2;
-            background: #ffbe00;
-            height: 100px;
-            width: 100px;
-            border-radius: 50px;
-            box-shadow: 10px 10px 31px -15px rgba(0,0,0,0.75);
-
-
+            grid-row: 1 / 3;
+            height: 110px;
+            width: 110px;
+            border-radius: 100px;
 }
 
 .profileDisplayName {
             color: black;
-            grid-column: 2 /span 2;
-            border-radius: 5px;
-            text-align: center;
-            font-size: 60%;
+            grid-column: 2/3;
+            grid-row: 1/2;
+            font-size: 1rem;
+            align-items: start;
 }
       
 .profileThoughtsDucked {
             color: black;
-            grid-column: 2 /span 2;
-            text-align: center;
+            grid-column: 2/3;
+            grid-row: 2/3;
             font-size: 20px;
+            align-items: start;
 }
