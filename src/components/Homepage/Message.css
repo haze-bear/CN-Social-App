@@ -1,13 +1,23 @@
 .directMessage{
     background: #27B1BE;
-    height: 100px;
-    width: 100px;
+    position: fixed;
+    bottom: -60px;
+    left: 50px;
+    height: 80px;
+    width: 80px;
     border-radius: 15px;
     color: white;
     margin-top: 50%;
     margin-bottom: 30px;
     margin-right: 90%;
     box-shadow: 10px 10px 31px -15px rgba(0,0,0,0.75);
+    transition: 100ms;
+}
+
+
+.directMessage:hover {
+    transform: translateY(-20px);
+    cursor: pointer;
 }
 
 
