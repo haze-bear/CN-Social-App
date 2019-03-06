@@ -4,7 +4,7 @@ import './App.css';
 import LeftNav from "./components/Homepage/LeftNav"
 import Feed from "./components/Homepage/Feed"
 import RightNav from "./components/Homepage/RightNav"
-import Post from "./components/Homepage/Post"
+import Post from "./components/Homepage/Post";
 
 
 class App extends Component {
@@ -45,20 +45,20 @@ class App extends Component {
     return (
       <div className="App">
 
-        <div class="LeftNav">
+        <div className="LeftNav">
           <LeftNav   
             postButton={this.postButton}
             typingHandler={this.typingHandler}
             term={this.state.term}
           />
           </div>
-        <div class="Feed">
+        <div className="Feed">
           <Feed 
             post={this.state.post}
             submit={this.state.submit}
           />
         </div>
-        <div class="RightNav">
+        <div className="RightNav">
         <RightNav/>
         </div>
       </div>
