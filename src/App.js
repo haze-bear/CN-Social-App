@@ -6,6 +6,7 @@ import './App.css';
 import LeftNav from "./components/LeftNav"
 import Feed from "./components/Feed"
 import RightNav from "./components/RightNav"
+import Post from "./components/Post"
 
 
 class App extends Component {
@@ -15,29 +16,28 @@ class App extends Component {
     this.state = {
         post:[],
         term:"",
-        postArr: [],
-        
-        }
+    }
 }
 
-  // newPost = (post) => {
-    
-  // }
-
+//When submit is pressed
   postButton = (event) => {
         event.preventDefault()
         if (this.state.term === ""){
           return
         }
-        let posts = [this.state.term]
-        // let posts = this.state.post
+        let posts = 
+        <Post
+          DisplayName={"Ashley Bennett"}
+          UserName={"ASHMA3STR0"}
+          PostBody={this.state.term}                
+        />
+        
         this.setState(prevState => ({
           post: [...prevState.post, posts], term:"",
         }))
-        // this.setState({term: "", post: posts})
-        // this.newPost(this.state.post)
   }
 
+// As your typing
   typingHandler = (event) => {
     this.setState({term: event.target.value})
 }

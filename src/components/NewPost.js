@@ -15,19 +15,6 @@ class NewPost extends React.Component{
     }
 
     
-
-    // typingHandler = (event) => {
-    //     this.setState({term: event.target.value})
-    // }
-
-    // submitHandler = (event) => {
-        // event.preventDefault()
-        // this.setState({term: "", post: this.state.term})
-        
-    // }
-
-    
-
     render(){
         
 
