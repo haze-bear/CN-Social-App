@@ -61,11 +61,6 @@ class App extends Component {
         <div class="RightNav">
         <RightNav/>
         </div>
-
-
-        <div class="LeftNav"><LeftNav /></div>
-        <div class="Feed"><Feed /></div>
-        <div class="RightNav"><RightNav /></div>
       </div>
     );
   }
