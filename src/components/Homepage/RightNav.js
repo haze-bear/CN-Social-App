@@ -7,6 +7,7 @@ import Followers from "./Followers"
 
 class RightNav extends React.Component {
 
+
     render() {
         return (
             <div>
