@@ -1,5 +1,10 @@
-.RightNav {
-    align-items: bottom;
+.App-logo {
+    border-radius: 50%;
+    width: 20%;
+    margin-top: 5%;
+    margin-left: 50%;
+  }
+  .RightNav {
     display: grid;
     background-color: rgb(253, 253, 253);
     text-align: center;
