@@ -11,10 +11,13 @@ class LeftNav extends React.Component{
     render(){
         return(
             <div>
-                <h1 className="LeftNav">Left Nav</h1>
                 <Profile />
                 <Search />
-                <NewPost/>
+                <NewPost
+                postButton={this.props.postButton}
+                typingHandler={this.props.typingHandler}
+                term={this.props.term}
+                />
                 <Message />
 
             </div>

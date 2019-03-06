@@ -42,6 +42,7 @@
   .postBody {
     margin-left: 130px;
     margin-top: -40px;
+    overflow-wrap: break-word;
     padding-right: 15px;
     text-align: left;
   }

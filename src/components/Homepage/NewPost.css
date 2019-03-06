@@ -1,6 +1,47 @@
 .NewPost{
+    display: flex;
+    flex-direction: column;
     background: #FFBE00;
     border-radius: 10px;
-    height: 300px;
-    margin: 2%;
+    margin-right: 2%;
+    height: 150%;
+    width: 100%;
+
 }
+
+/*Place holder settings*/
+.newPostThoughts {
+    resize: none;
+    width: 100%;
+    padding-left: 5%;
+    padding-top: 2%;
+    padding-bottom: 20%;
+    border-radius: 20px;
+    border: none;
+    background: #FFBE00;
+    color: white;
+    font-size: 140%;
+    overflow-wrap: break-word;
+}
+
+.newPostThoughts::placeholder {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.newPostThoughts:focus {
+    outline: none;
+}
+
+.newPostDuckIt {
+    align-self: flex-end;
+    width: 139px;
+    height: 40px;
+    color: #27B1BE;
+    border: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 10px;
+}
+
