@@ -1,4 +1,5 @@
 import React from 'react';
+import "./NewPost.css";
 
 
 class NewPost extends React.Component{
@@ -9,7 +10,7 @@ class NewPost extends React.Component{
         super(props)
         this.state = {
             term: "",
-            post:"",
+            post:[],
 
         }
     }
@@ -20,12 +21,12 @@ class NewPost extends React.Component{
 
         return(
             <div className="NewPost">
-                <h1>New Post</h1>
+                <h20>New Post</h20>
                 <form onSubmit={this.props.postButton}>
-                <input value={this.props.term} onChange={this.props.typingHandler} />
-                <button>Submit</button>
+                    <input className="newPostThoughts" placeholder="Share your thoughts..." value={this.props.term} onChange={this.props.typingHandler} />
+                    <button className="newPostDuckIt">Duck</button>
                 </form>
-            </div>
+                </div>
         )
     }
 

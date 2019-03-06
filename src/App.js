@@ -1,12 +1,10 @@
 import React, { Component } from 'react';
 
-import logoyellowbg from './logoyellowbg.svg';
-
 import './App.css';
-import LeftNav from "./components/LeftNav"
-import Feed from "./components/Feed"
-import RightNav from "./components/RightNav"
-import Post from "./components/Post"
+import LeftNav from "./components/Homepage/LeftNav"
+import Feed from "./components/Homepage/Feed"
+import RightNav from "./components/Homepage/RightNav"
+import Post from "./components/Homepage/Post"
 
 
 class App extends Component {
@@ -47,18 +45,27 @@ class App extends Component {
     return (
       <div className="App">
 
-        <LeftNav 
-        postButton={this.postButton}
-        typingHandler={this.typingHandler}
-        term={this.state.term}
-        />
-        <Feed 
-        post={this.state.post}
-        submit={this.state.submit}
-        />
+        <div class="LeftNav">
+          <LeftNav   
+            postButton={this.postButton}
+            typingHandler={this.typingHandler}
+            term={this.state.term}
+          />
+          </div>
+        <div class="Feed">
+          <Feed 
+            post={this.state.post}
+            submit={this.state.submit}
+          />
+        </div>
+        <div class="RightNav">
         <RightNav/>
-          <img src={logoyellowbg} className="App-logo" alt="logo" />
-          <h1>duck.io</h1>
+        </div>
+
+
+        <div class="LeftNav"><LeftNav /></div>
+        <div class="Feed"><Feed /></div>
+        <div class="RightNav"><RightNav /></div>
       </div>
     );
   }
