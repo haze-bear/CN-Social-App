@@ -1,16 +1,13 @@
-.far{
-    background: green;
-    border-radius: 10%;
+.directMessage{
+    background: #27B1BE;
+    height: 100px;
+    width: 100px;
+    border-radius: 15px;
     color: white;
-    width: 10%;
-    padding: 10%;
-    margin-bottom: 5%;
-    margin-right: 65%;
-    margin-top: 100%;
-    size: 80px;
-
+    margin-top: 50%;
+    margin-bottom: 30px;
+    margin-right: 90%;
+    box-shadow: 10px 10px 31px -15px rgba(0,0,0,0.75);
 }
 
-.far ::after{
-    font-size: 150px;
-}
+

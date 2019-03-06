@@ -1,5 +1,9 @@
 import React from 'react';
+<<<<<<< HEAD:src/components/RightNav.js
 // import logoyellowbg from './logoyellowbg.svg';
+=======
+import logoyellowbg from '../../logoyellowbg.svg';
+>>>>>>> 9fed75ae118aa9d2c6a04f8c3bb2fa115438d0a1:src/components/Homepage/RightNav.js
 import "./RightNav.css";
 
 import Followers from "./Followers"

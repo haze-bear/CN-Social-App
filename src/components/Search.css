@@ -1,0 +1,31 @@
+
+.Search {
+    border: none;
+    margin-right: 2%;
+    margin-top: 1%;
+    margin-bottom: 10%;
+    border-radius: 20px;
+    height: 40px;
+    background-color: #ffbe00;
+    text-align: center;
+    box-shadow: 10px 10px 31px -15px rgba(0,0,0,0.75);
+    text-align: left;
+    padding-top: 1%;
+
+
+
+}
+/*Place holder settings*/
+.searchFriend{
+    padding-top: 0.1%;
+    margin-left: 1%;
+    padding-left: 6%;
+    width: 90%;
+    border-radius: 20px;
+    height: 30px;
+}
+
+.searchFriend::placeholder {
+    color: #27B1BE;
+    font-size: 140%;
+  }
