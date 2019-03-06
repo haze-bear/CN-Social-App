@@ -20,13 +20,12 @@ class NewPost extends React.Component{
         
 
         return(
-            <div className="NewPost">
-                <h20>New Post</h20>
-                <form onSubmit={this.props.postButton}>
-                    <input className="newPostThoughts" placeholder="Share your thoughts..." value={this.props.term} onChange={this.props.typingHandler} />
+            <div>
+                <form className="NewPost" onSubmit={this.props.postButton}>
+                    <textarea rows="8" className="newPostThoughts" placeholder="Share your thoughts..." value={this.props.term} onChange={this.props.typingHandler} />
                     <button className="newPostDuckIt">Duck</button>
                 </form>
-                </div>
+            </div>
         )
     }
 
