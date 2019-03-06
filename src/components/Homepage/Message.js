@@ -8,7 +8,7 @@ class Message extends React.Component{
         return(
             <div className="Message">
                 <div>
-                <i class="far fa-comments"></i>
+                <i class="far fa-comments directMessage fa-5x"></i>
                 </div>
 
             </div>
