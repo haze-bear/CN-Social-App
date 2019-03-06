@@ -15,29 +15,18 @@ class NewPost extends React.Component{
         }
     }
 
-    typingHandler = (event) => {
-        this.setState({term: event.target.value})
-    }
-
-    submitHandler = (event) => {
-        event.preventDefault()
-        this.setState({term: "", post: this.state.term})
-        
-    }
-
     
-
     render(){
         
 
         return(
-            <div className="NewPost" >
+            <div className="NewPost">
                 <h20>New Post</h20>
-                <form onSubmit={this.submitHandler}>
-                <input className="newPostThoughts" placeholder="Share your thoughts..." value={this.state.term} onChange={this.typingHandler} />
-                <button className="newPostDuckIt">Duck</button>
+                <form onSubmit={this.props.postButton}>
+                    <input className="newPostThoughts" placeholder="Share your thoughts..." value={this.props.term} onChange={this.props.typingHandler} />
+                    <button className="newPostDuckIt">Duck</button>
                 </form>
-            </div>
+                </div>
         )
     }
 
