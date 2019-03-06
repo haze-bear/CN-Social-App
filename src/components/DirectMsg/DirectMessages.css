@@ -2,9 +2,11 @@
     background: #EEEEEE;
     height: 100vh;
     width: 100%;
+    /* display: grid; */
 }
 
 .DmContactCont {
+    align-self: center;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
@@ -14,11 +16,15 @@
     margin: 12px;
 }
 
+.DmContactCont:hover {
+    box-shadow: 0px 0px 7px 0px rgba(255,190,0,0.75);
+}
+
 .dmContactPic {
     width: 66px;
     height: 66px;
     border-radius: 50%;
-    background: rebeccapurple;
+    background: #FFBE00;
     grid-area: profile;
     justify-self: center;
     align-self: center;
@@ -38,4 +44,17 @@
     grid-area: notification;
     justify-self: center;
     align-self: center;
+}
+
+/* **************** */
+/* Search Restyling */
+/* **************** */
+
+.Search {
+    margin-top: 0;
+    background: #FFFFFF;
+}
+
+.searchFriend {
+    border: none;
 }

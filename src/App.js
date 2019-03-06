@@ -5,6 +5,8 @@ import LeftNav from "./components/Homepage/LeftNav"
 import Feed from "./components/Homepage/Feed"
 import RightNav from "./components/Homepage/RightNav"
 
+import DirectMessages from "./components/DirectMsg/DirectMessages.js"
+
 
 class App extends Component {
 
@@ -12,9 +14,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <div class="LeftNav"><LeftNav /></div>
-        <div class="Feed"><Feed /></div>
-        <div class="RightNav"><RightNav /></div>
+        <DirectMessages />
       </div>
     );
   }

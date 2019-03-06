@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logoyellowbg from '../../logoyellowbg.svg';
+import logoyellowbg from '../logoyellowbg.svg';
 import DirectMessagesContactContainer from './DirectMessagesContactContainer.js';
 
 
