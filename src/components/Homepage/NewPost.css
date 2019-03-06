@@ -38,10 +38,22 @@
     width: 139px;
     height: 40px;
     color: #27B1BE;
+    outline: none;
     border: none;
     border-radius: 50px;
     font-size: 1rem;
     font-weight: bold;
     margin: 10px;
+    transition: ease-in 50ms
+}
+
+.newPostDuckIt:active{
+    transform: scale(0.95)
+}
+
+.newPostDuckIt:hover {
+    cursor: pointer;
+    color: white;
+    background-color: #27B1BE;
 }
 

@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 import LeftNav from "./components/Homepage/LeftNav"
 import Feed from "./components/Homepage/Feed"
 import RightNav from "./components/Homepage/RightNav"
-import Post from "./components/Homepage/Post"
+import Post from "./components/Homepage/Post";
 
 import DirectMessages from "./components/DirectMsg/DirectMessages.js"
 
