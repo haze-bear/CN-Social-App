@@ -7,15 +7,10 @@ class Message extends React.Component{
     render(){
         return(
             <div className="Message">
-                <div>
-                <i class="far fa-comments directMessage fa-5x"></i>
-                </div>
-
+                <i class="far fa-comments directMessage fa-3x"></i>
             </div>
         )
     }
-
-
 }
 
 export default Message
