@@ -9,17 +9,17 @@
             {
                 "postID": 1,
                 "postDate": "14:30 6/3/19",
-                "postContent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse interdum dui et porttitor varius. Mauris sit amet convallis turpis. Phasellus tortor dui, posuere vel consectetur eu, convallis sit amet ipsum. Nulla viverra, odio quis aliquam condimentum, ante velit viverra ipsum, quis cursus purus nibh in quam. Integer sed libero felis. Morbi a urna posuere"
+                "postContent": "Hi, I'm John Smith"
             },
             {
                 "postID": 2,
                 "postDate": "14:40 6/3/19",
-                "postContent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse interdum dui et porttitor varius."
+                "postContent": "This is certainly the best social media platform there is!!"
             },
             {
                 "postID": 3,
                 "postDate": "15:00 6/3/19",
-                "postContent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse interdum dui et porttitor varius. Mauris sit amet convallis turpis. Phasellus tortor dui, posuere vel consectetur eu, convallis sit amet ipsum."
+                "postContent": "Those kids need to get off my lawn. Back in my day we had better things to do with our time like coke or inhaling asbestos!!! 🤬"
             }
         ]
     },
@@ -33,17 +33,17 @@
             {
                 "postID": 1,
                 "postDate": "16:20 6/3/19",
-                "postContent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse interdum dui et porttitor varius. Mauris sit amet convallis turpis. Phasellus tortor dui, posuere vel consectetur eu, convallis sit amet ipsum. Nulla viverra, odio quis aliquam condimentum, ante velit viverra ipsum, quis cursus purus nibh in quam. Integer sed libero felis. Morbi a urna posuere"
+                "postContent": "HI!! I'M BARRY SCOTT!!!"
             },
             {
                 "postID": 2,
                 "postDate": "17:40 6/3/19",
-                "postContent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse interdum dui et porttitor varius."
+                "postContent": "BUY SOME CILIT BANG!!"
             },
             {
                 "postID": 3,
                 "postDate": "18:00 6/3/19",
-                "postContent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse interdum dui et porttitor varius. Mauris sit amet convallis turpis. Phasellus tortor dui, posuere vel consectetur eu, convallis sit amet ipsum."
+                "postContent": "I'M VERY LOUD!!"
             }
         ]
     },
@@ -57,17 +57,17 @@
             {
                 "postID": 1,
                 "postDate": "12:22 6/3/19",
-                "postContent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse interdum dui et porttitor varius. Mauris sit amet convallis turpis. Phasellus tortor dui, posuere vel consectetur eu, convallis sit amet ipsum. Nulla viverra, odio quis aliquam condimentum, ante velit viverra ipsum, quis cursus purus nibh in quam. Integer sed libero felis. Morbi a urna posuere"
+                "postContent": "Jane Doe here to check out Duckio"
             },
             {
                 "postID": 2,
                 "postDate": "19:18 6/3/19",
-                "postContent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse interdum dui et porttitor varius."
+                "postContent": "Very excited to see the fiuture of this platform. Looking good soo far 👍"
             },
             {
                 "postID": 3,
                 "postDate": "19:20 6/3/19",
-                "postContent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse interdum dui et porttitor varius. Mauris sit amet convallis turpis. Phasellus tortor dui, posuere vel consectetur eu, convallis sit amet ipsum."
+                "postContent": "Just some Latin init 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse interdum dui et porttitor varius. Mauris sit amet convallis turpis. Phasellus tortor dui, posuere vel consectetur eu, convallis sit amet ipsum'."
             }
         ]
     }
