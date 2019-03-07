@@ -33,7 +33,7 @@ class App extends Component {
         />
         
         this.setState(prevState => ({
-          post: [...prevState.post, posts], term:"",
+          post: [posts, ...prevState.post], term:"",
         }))
   }
 

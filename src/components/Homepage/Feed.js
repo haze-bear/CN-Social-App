@@ -9,16 +9,19 @@ class Feed extends React.Component {
     render() {
         // Sample posts
         // Change max posts loaded on start
-        let maxPosts = 2
+        let maxPosts = 7
         let postArr = []
         for (let i = 0; i < maxPosts; i++) {
-            postArr.push(
+            let j = Math.floor((Math.random()* 3))
+            let k = Math.floor((Math.random()* 3))
+            let post =
                 <Post
-                    DisplayName={FakeData[0].displayName}
-                    UserName={FakeData[0].uniqueID}
-                    PostBody={FakeData[0].posts[i].postContent}
+                    DisplayName={FakeData[j].displayName}
+                    UserName={FakeData[j].uniqueID}
+                    PostBody={FakeData[j].posts[k].postContent}
                 />
-            )
+                
+            postArr.push(post)
         }
 
 
