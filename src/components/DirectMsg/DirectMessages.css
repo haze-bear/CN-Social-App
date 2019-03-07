@@ -6,6 +6,7 @@
 }
 
 .DirectMessagesContactContainer {
+    
     background: #EEEEEE;
     height: 100vh;
     width: 100%;
@@ -31,7 +32,6 @@
     width: 66px;
     height: 66px;
     border-radius: 50%;
-    background: #FFBE00;
     grid-area: profile;
     justify-self: center;
     align-self: center;
@@ -53,15 +53,21 @@
     align-self: center;
 }
 
-/* **************** */
-/* Search Restyling */
-/* **************** */
-
-.Search {
-    margin-top: 0;
-    background: #FFFFFF;
+.MessageInput {
+    position: fixed;
+    display: grid;
+    bottom: 0;
+    width: 100%;
+    background: #EEEEEE;
+    padding: 3px;
+    grid-template-areas: ". ."
 }
 
-.searchFriend {
-    border: none;
+.SendButton {
+    text-align: center;
+}
+
+.DirectMessagesChatCont {
+    margin: 7px;
+    overflow: scroll;
 }

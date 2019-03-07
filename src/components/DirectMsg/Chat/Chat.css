@@ -1,0 +1,46 @@
+.ChatRowCont {
+    width: 100%;
+    display: grid;
+}
+
+.ChatProfilePic {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    grid-area: pp;
+}
+
+.Send {
+    display: grid;
+    text-align: right;
+    justify-self: right;
+    justify-items: right;
+    grid-template-areas: "msg pp" "read read";
+}
+
+.Recieved {
+    display: grid; 
+    text-align: left;
+    justify-self: left;
+    grid-template-areas: "pp msg" "read read";
+}
+
+.Message {
+    background: #EEEEEE;
+    border-radius: 15px;
+    margin: 3px;
+    font-size: 1.2rem;
+    /* padding: 2px; */
+    overflow: hidden;
+    grid-area: msg;
+    padding: 2px;
+    min-height: 50px;
+    vertical-align: middle;
+}
+
+.MessageStatus {
+    color: #D5D5D5;
+    font-size: 1rem;
+    grid-area: read;
+    padding-right: 61px;
+}
