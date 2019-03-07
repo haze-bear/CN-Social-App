@@ -18,7 +18,9 @@ samplePosts = () => {
         let maxPosts = 7
         let postArr = []
         for (let i = 0; i < maxPosts; i++) {
+            //random user
             let j = Math.floor((Math.random()* 3))
+            //random post
             let k = Math.floor((Math.random()* 3))
             let post =
                 <Post
@@ -28,20 +30,14 @@ samplePosts = () => {
                 />
             postArr.push(post)
         }
-        this.setState(prevState => ({
-            post: [postArr],
-          }))
+        this.setState({post: [postArr]})
 }
 
 componentDidMount(){
     this.samplePosts()
 }
 
-
     render() {
-
-
-
 
         return (
             <div className="Feed">
@@ -51,8 +47,6 @@ componentDidMount(){
             </div>
         )
     }
-
-
 }
 
 export default Feed
