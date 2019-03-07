@@ -1,39 +1,52 @@
 import React from 'react';
 import Post from "./Post"
+import FakeData from "../../fakedata.json"
 
+class Feed extends React.Component {
 
-class Feed extends React.Component{
-
-    
-
-    render(){
-        // Sample posts
-        // Change max posts loaded on start
-        let maxPosts = 2
-        let postArr = []
-        for (let i = 0; i < maxPosts; i++){
-            postArr.push(
-                <Post
-                DisplayName={"Connor Rooney"}
-                UserName={"DefaultUser"}
-                PostBody={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse interdum dui et porttitor varius. Mauris sit amet convallis turpis. Phasellus tortor dui, posuere vel consectetur eu, convallis sit amet ipsum. Nulla viverra, odio quis aliquam condimentum, ante velit viverra ipsum, quis cursus purus nibh in quam. Integer sed libero felis. Morbi a urna posuere..."}
-                />
-            )
+    constructor() {
+        super()
+        this.state = {
+            post:[]
         }
-
-
-
-        return(
-            <div className="Feed">
-                <h1>Feed</h1>
-                {this.props.post}
-                {postArr}
-                
-            </div>
-        )
     }
 
 
+samplePosts = () => {
+        // Sample posts
+        // Change max posts loaded on start
+        let maxPosts = 7
+        let postArr = []
+        for (let i = 0; i < maxPosts; i++) {
+            //random user
+            let j = Math.floor((Math.random()* 3))
+            //random post
+            let k = Math.floor((Math.random()* 3))
+            let post =
+                <Post
+                    DisplayName={FakeData[j].displayName}
+                    UserName={FakeData[j].uniqueID}
+                    PostBody={FakeData[j].posts[k].postContent}
+                />
+            postArr.push(post)
+        }
+        this.setState({post: [postArr]})
+}
+
+componentDidMount(){
+    this.samplePosts()
+}
+
+    render() {
+
+        return (
+            <div className="Feed">
+                <h1>Feed</h1>
+                {this.props.post}
+                {this.state.post}
+            </div>
+        )
+    }
 }
 
 export default Feed
