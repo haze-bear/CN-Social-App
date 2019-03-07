@@ -4,9 +4,15 @@ import FakeData from "../../fakedata.json"
 
 class Feed extends React.Component {
 
+    constructor() {
+        super()
+        this.state = {
+            post:[]
+        }
+    }
 
 
-    render() {
+samplePosts = () => {
         // Sample posts
         // Change max posts loaded on start
         let maxPosts = 7
@@ -20,9 +26,20 @@ class Feed extends React.Component {
                     UserName={FakeData[j].uniqueID}
                     PostBody={FakeData[j].posts[k].postContent}
                 />
-                
             postArr.push(post)
         }
+        this.setState(prevState => ({
+            post: [postArr],
+          }))
+}
+
+componentDidMount(){
+    this.samplePosts()
+}
+
+
+    render() {
+
 
 
 
@@ -30,8 +47,7 @@ class Feed extends React.Component {
             <div className="Feed">
                 <h1>Feed</h1>
                 {this.props.post}
-                {postArr}
-
+                {this.state.post}
             </div>
         )
     }
