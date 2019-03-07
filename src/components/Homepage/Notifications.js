@@ -8,16 +8,28 @@ class Notifications extends React.Component {
         return (
 
             <div className="Notifications">
-                <div><h1>Notifications</h1></div>
+                <div class> <h1><font color="#27B1BE">Notifications</font></h1></div>
                 <div class="notificationCont">
-                    <div class="notification">a</div>
-                    <div class="notification">b</div>
-                    <div class="notification">c</div>
-                    <div class="notification">d</div>
-                    <div class="more"><h5>more..</h5></div>
-
-
+                    <div class="heart"></div>
+                    <div class="notification">Rihanna started to follow you</div>
+                    <div class="onLine"></div>
                 </div>
+                <div class="more"><h5>more..</h5></div>
+                <div class="notificationCont">
+                    <div class="heart"></div>
+                    <div class="notification">Rihanna liked your Duck</div>
+                    <div class="onLine"></div>
+                </div>
+                <div class="more"><h5>more..</h5></div>
+                <div class="notificationCont">
+                    <div class="heart"></div>
+                    <div class="notification">Rihanna retweets your Duck</div>
+                    <div class="onLine"></div>
+                </div>
+                <div class="more"><h5>more..</h5></div>
+
+
+
 
 
             </div>
