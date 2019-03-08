@@ -1,5 +1,5 @@
-.RightNav{
-      margin-left: 2%;
-      margin-right: 2%;
-
-  }
+.right-nav {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 160px auto auto)
+}

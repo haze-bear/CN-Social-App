@@ -10,7 +10,7 @@ class LeftNav extends React.Component{
 
     render(){
         return(
-            <div>
+            <div className="left-nav">
                 <Profile />
                 <Search />
                 <NewPost

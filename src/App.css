@@ -1,6 +1,5 @@
 .App {
   text-align: center;
-  margin: 40px;
 }
 
 .App-logo {
@@ -13,7 +12,13 @@
 .App {
   display: grid;
   grid-template-columns: 25% 50% 25%;
-  grid-gap: 10px;
-  /* background-color: #f5f5f5; */
   color: #444;
+}
+
+.LeftNav{
+  padding: 20px;
+}
+
+.RightNav{
+  padding: 20px;
 }

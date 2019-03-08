@@ -4,7 +4,8 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import './index.css';
 import App from './App';
 import ProfilePage from './components/ProfilePage/ProfilePage';
-import DirectMsg from './components/DirectMsg/DirectMsg'
+import DirectMsg from './components/DirectMsg/DirectMsg';
+import EditProfile from './components/EditProfile/EditProfile';
 import * as serviceWorker from './serviceWorker';
 
 const routing = (
@@ -13,6 +14,7 @@ const routing = (
             <Route exact path="/" component={App}/>
             <Route path="/profilepage" component={ProfilePage}/>
             <Route path="/directmsg" component={DirectMsg}/>
+            <Route path="/editprofile" component={EditProfile}/>
         </div>
     </Router>
 )
