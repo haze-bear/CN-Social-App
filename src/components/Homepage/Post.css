@@ -13,8 +13,9 @@
   grid-template-areas: 
   "profilePic displayName displayName"
   "profilePic userName userName"
-  ". post post"
-  ". actions actions";
+  "profilePic post post"
+  "profilePic postTime postTime"
+  "profilePic actions actions";
   text-align: left;
   /* padding: 0px 0px; */
   cursor: pointer;
@@ -38,21 +39,23 @@ h2 {
 .postDisplayName {
   margin-top: 15px;
   grid-area: displayName;
+  margin-bottom: auto;
 }
 
 .postUserName {
   grid-area: userName;
-  margin-bottom: auto; 
-
+  margin-top: -10px;
+  padding-bottom: 50px;
+  font-weight: lighter;
+  /* margin-bottom: 100px;  */
 }
 
 .postBody {
   /* margin-left: 130px; */
   grid-area: post;
   padding-top: 0px;
-  /* margin-top: -30px; */
+  margin-top: -40px;
   overflow-wrap: break-word;
-
   padding-right: 15px;
   text-align: left;
 }
@@ -94,6 +97,12 @@ h2 {
   grid-area: comment;
 }
 
+.postTime {
+  grid-area: postTime;
+  margin-bottom: auto; 
+  text-align: right;
+  margin-right: 20px;
+}
 
 .hidden {
   display:none
