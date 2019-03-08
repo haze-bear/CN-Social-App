@@ -8,11 +8,10 @@ class ProfileRightBar extends React.Component {
 
     render() {
         return (
-        <div>
-                <h1 className="RightNav">RightNav</h1>
-                <div className="Followers"><Followers /></div>
-                <div className="Following"><Following /></div>
-            </div>
+        <div className="profilerightbar">
+            <div className="Followers"><Followers /></div>
+            <div className="Following"><Following /></div>
+        </div>
     )
 }
 }

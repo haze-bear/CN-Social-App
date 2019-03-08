@@ -1,24 +1,19 @@
 
 .LogoGrid {
         display: grid;
-        grid-template-columns: 93%;
+        grid-template-columns: 100%;
         justify-items: end;
+        margin-bottom: 
 }
 
   .App-webpageName{
         color: #E8E8E8;
-        font-size: 60%;
-        margin-right: 1%;
-        text-shadow: 1px 1px #27B1BE;
+        font-family: "Montserrat";
+        font-weight: bold;
 }
 
   .App-logo {
-        box-shadow: 10px 10px 31px -15px rgba(0,0,0,0.75);
-        border-radius: 50%;
-        width: 20%;
-        margin-top: 5%;
-        margin-left: 50%;
-
+       width: 20%;
 }
 
   

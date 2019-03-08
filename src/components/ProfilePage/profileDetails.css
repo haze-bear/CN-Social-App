@@ -1,12 +1,22 @@
 .profile-details {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 10% 10% 70% 10%;
     padding: 20px;
     text-align: left;
     border-radius: 15px;
     width: 370px;
     height: 337px;
     background-color: #fff;
-    align-self: center;
+    justify-self: center;
+    line-height: 20px;
 }
+
+.profile-details h3 {
+    font-weight: lighter;
+    color: #ccc;
+}
+
 
 .total-posts {
     color: #27B1BE;

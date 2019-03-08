@@ -1,6 +1,7 @@
 .profile-info {
     padding: 20px;
     display: grid;
-    grid-template-columns: repeat(3, 450px);
+    grid-template-columns: repeat(3, 25% 50% 25%);
     grid-template-rows: auto;
+
 }
