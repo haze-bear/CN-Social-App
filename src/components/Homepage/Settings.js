@@ -1,11 +1,12 @@
 import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 class Settings extends React.Component {
 
     render() {
         return (
             <div className="Settingss">
-                <div><h1><font color="#27B1BE">Settings</font></h1></div>
+                <div><FontAwesomeIcon icon="cogs" size="2x" color="#27b1be"/></div>
             </div>
         )
     }

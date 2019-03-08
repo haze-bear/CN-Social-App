@@ -1,4 +1,5 @@
 import React from 'react';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import './Post.css'
 
 
@@ -42,7 +43,6 @@ class Post extends React.Component{
     }
 
     clickedLike = (state) => {
-        console.log(state)
         if(state){
             this.setState({clickedLike: false})
         } else {
@@ -51,7 +51,6 @@ class Post extends React.Component{
     }
 
     clickedSave = (state) => {
-        console.log(state)
         if(state){
             this.setState({clickedSave: false})
         } else {
@@ -60,7 +59,6 @@ class Post extends React.Component{
     }
 
     clickedComment = (state) => {
-        console.log(state)
         if(state){
             this.setState({clickedComment: false})
         } else {
@@ -69,7 +67,6 @@ class Post extends React.Component{
     }
 
     checkClicked = (clicked) => {
-        // console.log("hello")
         if (!clicked){
             if (this.state.hoverLike){
                 return "fas fa-heart"
@@ -85,41 +82,38 @@ class Post extends React.Component{
     render(){
 
         const clickedLike = () => {
-            console.log("hello")
             if (!this.state.clickedLike){
                 if (this.state.hoverLike){
-                    return "fas fa-heart"
+                    return ["fas", "heart"]
                 } else {
-                return  "far fa-heart"
+                return  ["far", "heart"]
                 }
             } else {
-                return "fas fa-heart"
+                return ["fas", "heart"]
             }
         }
 
         const clickedSave = () => {
-            console.log("hello")
             if (!this.state.clickedSave){
                 if (this.state.hoverSave){
-                    return "fas fa-bookmark"
+                    return ['fas', 'bookmark']
                 } else {
-                return  "far fa-bookmark"
+                return  ['far', 'bookmark']
                 }
             } else {
-                return "fas fa-bookmark"
+                return ['fas', 'bookmark']
             }
         }
 
         const clickedComment = () => {
-            console.log("hello")
             if (!this.state.clickedComment){
                 if (this.state.hoverComment){
-                    return "fas fa-comment-alt"
+                    return ['fas', 'comment-alt']
                 } else {
-                return  "far fa-comment-alt"
+                return  ['far', 'comment-alt']
                 }
             } else {
-                return "fas fa-comment-alt"
+                return ['fas', 'comment-alt']
             }
         }
 
@@ -129,37 +123,37 @@ class Post extends React.Component{
                     <div className="postProfilePic"></div>
                     <div className="postDisplayName"><h1>{this.props.DisplayName}</h1></div>
                     <div className="postUserName"><h2>@{this.props.UserName}</h2></div>
-                
                     <div className="postBody"><p>{this.props.PostBody}</p></div>
                     <div className="postActions">
-                        <div className="postIconLeft"><i
-                        onMouseEnter={() => this.setButtonHoveredLike(true)} 
-                        onMouseLeave={() => this.setButtonHoveredLike(false)}
-                        onMouseUp={() => this.clickedLike(this.state.clickedLike)}
-                        class={clickedLike()}
-                        ></i></div>
-                        <div className="postIconCenter"><i 
-                        onMouseEnter={() => this.setButtonHoveredSave(true)} 
-                        onMouseLeave={() => this.setButtonHoveredSave(false)}
-                        // class={this.state.hoverSave ? "fas fa-bookmark" : "far fa-bookmark"}
-                        onMouseUp={() => this.clickedSave(this.state.clickedSave)}
-                        class={clickedSave()}
-                        >
-                        </i></div>
-                        <div className="postIconRight"><i
-                        onMouseEnter={() => this.setButtonHoveredComment(true)} 
-                        onMouseLeave={() => this.setButtonHoveredComment(false)}
-                        // class={this.state.hoverComment ? "fas fa-comment-alt" : "far fa-comment-alt"}
-                        onMouseUp={() => this.clickedComment(this.state.clickedComment)}
-                        class={clickedComment()}
-                         ></i></div>
+                        <div className="postIconLeft">
+                            <FontAwesomeIcon
+                                onMouseEnter={() => this.setButtonHoveredLike(true)} 
+                                onMouseLeave={() => this.setButtonHoveredLike(false)}
+                                onMouseUp={() => this.clickedLike(this.state.clickedLike)}
+                                icon={clickedLike()}
+                            />
+                        </div>
+                        <div className="postIconCenter">
+                            <FontAwesomeIcon 
+                                onMouseEnter={() => this.setButtonHoveredSave(true)} 
+                                onMouseLeave={() => this.setButtonHoveredSave(false)}
+                                onMouseUp={() => this.clickedSave(this.state.clickedSave)}
+                                icon={clickedSave()}
+                            />
+                        </div>
+                        <div className="postIconRight">
+                            <FontAwesomeIcon
+                                onMouseEnter={() => this.setButtonHoveredComment(true)} 
+                                onMouseLeave={() => this.setButtonHoveredComment(false)}
+                                onMouseUp={() => this.clickedComment(this.state.clickedComment)}
+                                icon={clickedComment()}
+                            />
+                        </div>
                     </div>
                 </div>
             </div>
         )
     }
-
-
 }
 
 export default Post
