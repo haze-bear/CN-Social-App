@@ -9,18 +9,18 @@ class Trending extends React.Component {
     constructor() {
         super()
         this.state = {
-            feed:[],
+            feed: [],
         }
     }
     
     x = () => {
-        return fetch('http://www.nasa.gov/rss/dyn/breaking_news.rss')
+        return fetch('https://news.google.com/news/rss')
     .then((response) => response.text())
     .then((responseData) => rssParser.parse(responseData))
     .then((rss) => {
-     console.log(rss.title);
-     console.log(rss.items.length);
-     this.setState({feed: rss.title})
+        console.log(rss.title);
+        console.log(rss.items[0].title);
+        this.setState({feed: rss.items})
     })
     };
 
@@ -29,11 +29,17 @@ class Trending extends React.Component {
     }
 
     render() {
-
+        // console.log(this.state.feed.items[0]);
+        
         return (
             <div className="Trending">
                 <div><h1><font color="#27B1BE">Trending</font></h1></div>
-                <h1>{this.state.feed}</h1>
+                {this.state.feed && this.state.feed.map(item => (
+                    <div>
+                        <a href={item.links[0].url} target="blank" ><h1>{item.title}</h1></a>
+                        <br />
+                    </div>
+                ))}
             </div>
         )
     }
