@@ -4,7 +4,7 @@ import DefaultProfile from '../../images/userphoto/DefaultProfile.jpg';
 
 import {Link} from 'react-router-dom';
 
-class Profile extends React.Component{
+class Profile extends React.Component {
 
     render(){
         return(
@@ -22,5 +22,5 @@ class Profile extends React.Component{
 
 
 }
-
+        
 export default Profile

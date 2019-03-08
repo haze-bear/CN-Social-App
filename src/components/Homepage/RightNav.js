@@ -1,5 +1,8 @@
 import React from 'react';
-import logoyellowbg from '../../logoyellowbg.svg'
+import Logo from "./Logo";
+import Notifications from "./Notifications";
+import Trending from "./Trending";
+import Settings from "./Settings"
 import "./RightNav.css";
 
 class RightNav extends React.Component {
@@ -8,8 +11,13 @@ class RightNav extends React.Component {
     render() {
         return (
             <div>
-                <img src={logoyellowbg} className="App-logo" alt="logo" />
-                <h1>duck.io</h1>
+                <div>
+                <h1 className="RightNav">RightNav</h1>
+                </div>
+                <Logo />
+                <Notifications />
+                <Trending/>
+                <Settings />
             </div>
             
         )
