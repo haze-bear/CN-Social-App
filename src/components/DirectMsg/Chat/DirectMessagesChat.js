@@ -26,8 +26,8 @@ class DirectMessagesChat extends Component {
                 <ChatRow pp="https://cdn.iconscout.com/icon/free/png-256/avatar-370-456322.png" sr="Send" read="Read 14:20" message="Lorem ipsum."/>
             </div>
 
-            <div className="MessageInput">
-    <input placeholder="Message..."></input><input className="SendButton" type="submit" value={<i className="fas fa-arrow-alt-circle-up"></i>}></input>
+            <div className="MessageSendCont">
+                <input className="MessageInput" placeholder="Message..."></input><input className="SendButton" type="submit" value="Send"></input>
             </div>
         </div>
     );

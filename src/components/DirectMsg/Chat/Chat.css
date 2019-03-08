@@ -44,3 +44,20 @@
     grid-area: read;
     padding-right: 61px;
 }
+
+.SendButton {
+    text-align: left;
+}
+
+.MessageInput {
+    width: 80%;
+}
+
+.MessageSendCont {
+    position: fixed;
+    display: grid;
+    bottom: 0;
+    background: #EEEEEE;
+    padding: 3px;
+    grid-template-areas: ". ."
+}

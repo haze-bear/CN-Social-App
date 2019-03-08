@@ -53,20 +53,6 @@
     align-self: center;
 }
 
-.MessageInput {
-    position: fixed;
-    display: grid;
-    bottom: 0;
-    width: 100%;
-    background: #EEEEEE;
-    padding: 3px;
-    grid-template-areas: ". ."
-}
-
-.SendButton {
-    text-align: center;
-}
-
 .DirectMessagesChatCont {
     margin: 7px;
     overflow: scroll;
