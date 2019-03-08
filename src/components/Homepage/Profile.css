@@ -18,13 +18,15 @@
             grid-column: 2/3;
             grid-row: 1/2;
             font-size: 1rem;
-            align-items: start;
+            justify-self: start;
+            align-self: center;
 }
       
 .profileThoughtsDucked {
             color: black;
             grid-column: 2/3;
             grid-row: 2/3;
-            font-size: 20px;
-            align-items: start;
+            font-size: 2rem;
+            justify-self: start;
+            align-self: center;
 }
