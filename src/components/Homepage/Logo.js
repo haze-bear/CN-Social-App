@@ -1,5 +1,5 @@
 import React from 'react'
-import logoyellowbg from '../logoyellowbg.svg';
+import logoyellowbg from '../../logoyellowbg.svg';
 import './Logo.css'
 
 class Logo extends React.Component {

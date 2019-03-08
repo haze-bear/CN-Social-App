@@ -1,0 +1,15 @@
+.feed-title {
+    font-size: 48px;
+    text-align: left;
+    padding: 20px;
+}
+
+.feed-container {
+    padding: 20px;
+}
+
+.Feed {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 160px auto;
+}

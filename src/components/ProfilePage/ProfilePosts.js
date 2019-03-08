@@ -1,8 +1,13 @@
 import React from 'react';
+import Post from "../Homepage/Post";
 
 const ProfilePosts = () => {
     return (
-        <h1>posts</h1>
+        <div className="profileposts">
+            <Post/>
+            <Post/>
+            <Post/>
+        </div>
     )
 }
 

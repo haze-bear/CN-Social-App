@@ -1,6 +1,7 @@
 import React from 'react';
 import Post from "./Post"
 import FakeData from "../../fakedata.json"
+import './Feed.css'
 
 class Feed extends React.Component {
 
@@ -41,9 +42,12 @@ componentDidMount(){
 
         return (
             <div className="Feed">
-                <h1>Feed</h1>
-                {this.props.post}
-                {this.state.post}
+                <h1 className="feed-title">Feed</h1>
+                <div className="feed-container">
+                    {this.props.post}
+                    {this.state.post}
+                </div>
+                
             </div>
         )
     }
