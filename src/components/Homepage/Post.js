@@ -1,4 +1,5 @@
 import React from 'react';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import './Post.css'
 
 
@@ -16,9 +17,9 @@ class Post extends React.Component{
                 </div>
                 <div className="postBody"><p>{this.props.PostBody}</p></div>
                 <div className="postActions">
-                    <div className="postIconLeft"><i class="far fa-heart"></i></div>
-                    <div className="postIconCenter"><i class="fas fa-redo"></i></div>
-                    <div className="postIconRight"><i class="far fa-comment-alt"></i></div>
+                    <div className="postIconLeft"><FontAwesomeIcon icon={['far', 'heart']}/></div>
+                    <div className="postIconCenter"><FontAwesomeIcon icon={['far', 'bookmark']}/></div>
+                    <div className="postIconRight"><FontAwesomeIcon icon={['far', 'comment-alt']}/></div>
                 </div>
             </div>
         )

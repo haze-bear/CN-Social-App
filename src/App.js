@@ -6,6 +6,14 @@ import Feed from "./components/Homepage/Feed"
 import RightNav from "./components/Homepage/RightNav"
 import Post from "./components/Homepage/Post";
 
+import { library } from '@fortawesome/fontawesome-svg-core'
+//importing solid icons
+import { faSearch, faHeart as fasHeart, faBookmark as fasBookmark, faCommentAlt as fasCommentAlt , faUserPlus, faArrowRight, faCogs  } from '@fortawesome/free-solid-svg-icons'
+//importing regular icons
+import { faComments, faHeart as farHeart, faBookmark as farBookmark, faCommentAlt as farCommentAlt, faImages, faSmile  } from '@fortawesome/free-regular-svg-icons'
+//creating library of icons
+library.add(faComments, faSearch, fasHeart, farHeart, fasBookmark, farBookmark, fasCommentAlt, farCommentAlt, faUserPlus, faArrowRight, faImages, faSmile, faCogs)
+
 
 class App extends Component {
 
