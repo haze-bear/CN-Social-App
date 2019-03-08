@@ -93,3 +93,12 @@ h2 {
 .postIconRight {
   grid-area: comment;
 }
+
+
+.hidden {
+  display:none
+}
+
+.show {
+  display: grid
+}
