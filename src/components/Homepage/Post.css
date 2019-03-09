@@ -10,12 +10,15 @@
   display: grid;
   grid-template-columns: 125px 1fr 1fr;
   grid-template-rows: 1fr 1fr auto auto;
-  grid-template-areas:
-    "profilePic displayName displayName"
-    "profilePic userName userName"
-    ". post post"
-    ". actions actions";
+  grid-template-areas: 
+  "profilePic displayName displayName"
+  "profilePic userName userName"
+  "profilePic post post"
+  "profilePic postTime postTime"
+  "profilePic actions actions";
   text-align: left;
+  cursor: pointer;
+
 }
 
 .postHeader h1,
@@ -35,17 +38,20 @@ h2 {
 .postDisplayName {
   margin-top: 15px;
   grid-area: displayName;
+  margin-bottom: auto;
 }
 
 .postUserName {
   grid-area: userName;
-  margin-bottom: auto;
+  margin-top: -10px;
+  padding-bottom: 50px;
+  font-weight: lighter;
 }
 
 .postBody {
   grid-area: post;
   padding-top: 0px;
-  margin-top: -30px;
+  margin-top: -40px;
   overflow-wrap: break-word;
   padding-right: 15px;
   text-align: left;
@@ -71,26 +77,11 @@ h2 {
 }
 
 .fa-heart:Hover {
+  color: #27b1be;
   cursor: pointer;
 }
 
 .fa-heart:active {
-  transform: scale(0.9)
-}
-
-.fa-bookmark:Hover {
-  cursor: pointer;
-}
-
-.fa-bookmark:active {
-  transform: scale(0.9)
-}
-
-.fa-comment-alt:Hover {
-  cursor: pointer;
-}
-
-.fa-comment-alt:active {
   transform: scale(0.9)
 }
 
@@ -100,4 +91,19 @@ h2 {
 
 .postIconRight {
   grid-area: comment;
+}
+
+.postTime {
+  grid-area: postTime;
+  margin-bottom: auto; 
+  text-align: right;
+  margin-right: 20px;
+}
+
+.hidden {
+  display:none
+}
+
+.show {
+  display: grid
 }

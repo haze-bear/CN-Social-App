@@ -14,6 +14,7 @@ class Post extends React.Component{
             clickedLike: false,
             clickedSave: false,
             clickedComment: false,
+            postActive: false,
         }
     }
 
@@ -78,6 +79,15 @@ class Post extends React.Component{
         }
     }
 
+    checkExpanded = (clicked) => {
+        // let dp = document.getElementsByClassName("postUserName")
+        if (!clicked){
+            return this.setState({postActive: true})
+        } else {
+            return this.setState({postActive: false})
+        }
+    }
+
 
     render(){
 
@@ -119,11 +129,12 @@ class Post extends React.Component{
 
         return(
             <div className="postCont">
-                <div className="postHeader">
+                <div className="postHeader" onMouseUp={() => this.checkExpanded(this.state.postActive)}>
                     <div className="postProfilePic"></div>
                     <div className="postDisplayName"><h1>{this.props.DisplayName}</h1></div>
-                    <div className="postUserName"><h2>@{this.props.UserName}</h2></div>
+                    <div className="postUserName"><p class={this.state.postActive ? "show" : "hidden"}>@{this.props.UserName}</p></div>
                     <div className="postBody"><p>{this.props.PostBody}</p></div>
+                    <div className="postTime"><p class={this.state.postActive ? "show" : "hidden"}>{this.props.PostTime}</p></div>
                     <div className="postActions">
                         <div className="postIconLeft">
                             <FontAwesomeIcon
