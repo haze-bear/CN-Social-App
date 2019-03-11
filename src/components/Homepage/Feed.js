@@ -28,6 +28,7 @@ samplePosts = () => {
                     DisplayName={FakeData[j].displayName}
                     UserName={FakeData[j].uniqueID}
                     PostBody={FakeData[j].posts[k].postContent}
+                    PostTime={FakeData[j].posts[k].postDate}
                 />
             postArr.push(post)
         }
