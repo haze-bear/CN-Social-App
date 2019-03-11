@@ -1,0 +1,30 @@
+.Trending{
+    display: flex;
+    flex-direction: column;
+    background: #FFBE00;
+    border-radius: 10px;
+    margin-right: 2%;
+    height: 150%;
+    width: 100%;
+    padding: 1em; 
+}
+
+.wrapperTrend {
+    display: flex;  
+    flex-flow: row wrap;
+    font-weight: bold;
+    text-align: justify;
+  }
+  
+.wrapperTrend > * {
+    padding: 10px;
+    flex: 1 100%;
+  }
+ 
+.headerTrend {
+    color: white;
+  }
+
+.footerTrend{
+    margin: 1%;
+}
